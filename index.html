@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>西条農業高校 学校紹介</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+      background: #f4fff4;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2e8b57, #6dbf5f);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2e8b57;
+      border-left: 8px solid #6dbf5f;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #e8f7e8;
+      width: 30%;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #cdeccd;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    button {
+      background: #2e8b57;
+      color: white;
+      border: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1f6b42;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      background: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>愛媛県立西条農業高等学校</h1>
+    <p>地域に根ざした学びで、未来の農業と地域を支える学校</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>学校の魅力</h2>
+      <p>
+        西条農業高校は、地域に根ざした農業教育を行っている学校です。
+        農業の知識や技術を学ぶだけでなく、地域との連携を通して実践的な力を身につけることができます。
+        また、命を育てる学びを通して、将来の地域産業を支える人材の育成を目指しています。
+      </p>
+    </section>
+
+    <section>
+      <h2>学科・活動・行事</h2>
+      <ul>
+        <li>食農科学科・環境工学科・生活デザイン科の3つの学科がある</li>
+        <li>農業クラブ活動や地域と連携した学習が盛ん</li>
+        <li>実習や発表会を通して、実践力と表現力を高められる</li>
+        <li>部活動にも力を入れており、学校生活を充実させることができる</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>学校情報</h2>
+      <table>
+        <tr>
+          <th>学校名</th>
+          <td>愛媛県立西条農業高等学校</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>〒793-0035 愛媛県西条市福武甲2093</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>1918年（大正7年）設立認可</td>
+        </tr>
+        <tr>
+          <th>学科</th>
+          <td>食農科学科・環境工学科・生活デザイン科</td>
+        </tr>
+        <tr>
+          <th>生徒数</th>
+          <td>248名</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>学校の写真</h2>
+      <p>配布された写真を使って、西条農業高校の魅力を紹介します。</p>
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="西条農業高校の写真1">
+        <img src="images/photo2.jpg" alt="西条農業高校の写真2">
+      </div>
+    </section>
+
+    <section>
+      <h2>関連リンク</h2>
+      <div class="buttons">
+        <button id="officialBtn" onclick="window.open('https://ehm-saijo-ah.esnet.ed.jp/', '_blank')">
+          公式サイトを見る
+        </button>
+
+        <button id="externalBtn" onclick="window.open('https://www.natffj.org/', '_blank')">
+          農業クラブ連盟を見る
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 西条農業高校 学校紹介サイト</p>
+  </footer>
+
+  <script>
+    const officialBtn = document.getElementById("officialBtn");
+    const externalBtn = document.getElementById("externalBtn");
+
+    officialBtn.addEventListener("click", function() {
+      officialBtn.textContent = "公式サイトを開きました";
+      officialBtn.style.backgroundColor = "#ff8c00";
+    });
+
+    externalBtn.addEventListener("click", function() {
+      externalBtn.textContent = "外部サイトを開きました";
+      externalBtn.style.backgroundColor = "#8b4513";
+    });
+  </script>
+
+</body>
+</html>
